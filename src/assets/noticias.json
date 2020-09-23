@@ -1,0 +1,4 @@
+[
+    {"titulo": "primer noticia", "texto": "Primer noticia cargada para la prueba del proyecto", "fechaPublicacion": "2020-09-09", "estado":"Publicado"},
+    {"titulo": "Se confirmó el caso sospechoso de covid-19 del Concejo Deliberante ", "texto": "Neuquén.- Alrededor de las 19.30 horas de este martes, la Presidenta del Concejo Deliberante...", "fechaPublicacion": "2020-09-09", "estado":"Publicado"}
+]

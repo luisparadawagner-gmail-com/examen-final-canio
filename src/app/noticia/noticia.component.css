@@ -1,0 +1,38 @@
+h1{
+    text-align: center;
+}
+
+p{
+    text-align: left;
+    font-weight: bolder;
+}
+  
+  form {
+    padding: 2em;
+    border: 1px solid #c584c0;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    /* float: center; */
+    /* margin-left: %; */
+  }
+  
+  form button {
+    background: rgb(223, 169, 169);
+    padding: 0.5em;
+    border-radius: 5px;
+    margin-right: 5%;
+    /* float: right; */
+   }
+  form button:hover {
+    background: rgb(196, 107, 159);
+  }
+    
+ input {
+    margin-bottom: 0.5rem;
+    display: block;
+    padding: 10px;
+    float: center;
+  } 

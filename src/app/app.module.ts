@@ -13,12 +13,17 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatSelectModule} from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import { ServiceService } from './servicio/service.service';
+import { NoticiaComponent } from './noticia/noticia.component';
+import { ListarNoticiaComponent } from './listar-noticia/listar-noticia.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    NoticiaComponent,
+    ListarNoticiaComponent,
   ],
   imports: [
     BrowserModule,
@@ -32,7 +37,8 @@ import { ServiceService } from './servicio/service.service';
     MatFormFieldModule,
     MatInputModule,
     MatSelectModule,
-    HttpClientModule
+    HttpClientModule,
+    MatCheckboxModule
   ],
   providers: [ServiceService],
   bootstrap: [AppComponent]

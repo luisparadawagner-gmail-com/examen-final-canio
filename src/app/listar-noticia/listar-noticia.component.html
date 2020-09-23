@@ -1,0 +1,50 @@
+<div class="container" >
+    <h1>Listado de Noticias</h1>
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+            
+        <ng-container matColumnDef="titulo">
+            <th mat-header-cell *matHeaderCellDef> Titulo Noticia </th>
+            <td mat-cell *matCellDef="let noticia"> {{noticia.titulo | titlecase}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="texto">
+            <th mat-header-cell *matHeaderCellDef> Texto </th>
+            <td mat-cell *matCellDef="let noticia"> {{noticia.texto | titlecase}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="fechaPublicacion">
+            <th mat-header-cell *matHeaderCellDef> Fecha de Publicación </th>
+            <td mat-cell *matCellDef="let noticia"> {{noticia.fechaPublicacion}} </td>
+        </ng-container>
+
+        <ng-container matColumnDef="estado">
+            <th mat-header-cell *matHeaderCellDef> Estado de Noticia </th>
+            <td mat-cell *matCellDef="let noticia"> {{noticia.estado | titlecase}} </td>
+        </ng-container>
+
+
+        <ng-container matColumnDef="editar">
+            <th mat-header-cell *matHeaderCellDef> Editar </th>
+            <td mat-cell *matCellDef="let noticia">
+                <button type="button" (click)="editar(noticia)" mat-flat-button color="accent">Editar</button>
+            </td>
+        </ng-container>
+
+        <ng-container matColumnDef="cambiarEstado">
+            <th mat-header-cell *matHeaderCellDef> Cambiar Estado </th>
+            <td mat-cell *matCellDef="let noticia">
+                <button type="button" (click)="cambiarEstado(noticia)" mat-flat-button color="accent">Cambiar Estado</button>
+            </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let noticia; columns: displayedColumns;"></tr>
+        
+
+    </table>
+   
+            <button type="button" (click)="agregar()" mat-flat-button color="accent">Agregar Noticia</button>
+
+</div>
